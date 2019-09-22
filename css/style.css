@@ -1,0 +1,24 @@
+nav{
+	background: #15CB8D;
+}
+
+nav img{
+	border-radius: 50%;
+}
+
+body{
+	height: 9000px;
+}
+
+div.content{
+	margin-top: 70px;
+}
+
+#myList .active{
+	background: #B8B8B8;
+}
+
+#myList .active .text-primary, #myList .active div div.name{
+	color: white;
+}
+

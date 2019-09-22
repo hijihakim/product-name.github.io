@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+
+    <!-- navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+		<div class="container">
+		  <a class="navbar-brand" href="#"><img src="img/icon.png" alt="icon" width="40"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active disabled text-white">Home<span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link text-white" href="pages/about.html">About</a>
+          <a class="nav-item nav-link text-white" href="pages/contact.html">Contact</a>
+		      <a class="nav-item nav-link btn btn-primary text-white" data-toggle="modal" data-target="#add">Add</a>
+		    </div>
+		  </div>
+		</div>
+	</nav>
+    <!-- end navbar -->
+
+    <!-- content -->
+  <div class="container content">
+    <h1 align="center">Price</h1>
+
+    <div class="list-group" id="myList" role="tablist">
+      <!-- <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+        <div data-toggle="modal" data-target="#detail">
+          <div class="name">Product Name</div>
+          <div class="text-primary price">Price : RP. 20000</div>
+        </div>
+      </a>
+      <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+        <div data-toggle="modal" data-target="#detail">
+          <div class="name">Product Name</div>
+          <div class="text-primary price">Price : RP. 20000</div>
+        </div>
+      </a>
+      <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+        <div data-toggle="modal" data-target="#detail">
+          <div class="name">Product Name</div>
+          <div class="text-primary price">Price : RP. 20000</div>
+        </div>
+      </a>
+      <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+        <div data-toggle="modal" data-target="#detail">
+          <div class="name">Product Name</div>
+          <div class="text-primary price">Price : RP. 20000</div>
+        </div>
+      </a>
+ -->    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="home" role="tabpanel">...</div>
+      <div class="tab-pane" id="profile" role="tabpanel">...</div>
+      <div class="tab-pane" id="messages" role="tabpanel">...</div>
+      <div class="tab-pane" id="settings" role="tabpanel">...</div>
+    </div>    
+  </div>
+    <!-- end content -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <form id="add-data">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                </div>
+                <input name="name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Name Product">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Price</span>
+                </div>
+                <input name="price" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="12000">
+              </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary" type="submit" id="save-data">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- end alert -->
+
+    <!-- alert detail Produk -->
+  <div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class="badge badge-dark">ID</span><br>
+          <div class="id">ID Produk</div>
+          <span class="badge badge-primary">Name</span><br>
+          <div class="name">Name Produk</div>
+          <span class="badge badge-success">Price</span>
+          <div class="price">12222</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" id="edit">edit</button>
+          <button type="button" class="btn btn-danger" id="remove">delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end alert  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/db.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"name" : "Produk price",
+	"short_name" : "pp",
+	"display" : "standalone",
+	"background_color" : "#10ADB7",
+	"theme_color" : "#D70B3B",
+	"start_url" : "/index.html",
+	"icons" : [
+		{
+			"src" : "img/icon.png",
+			"type" : "image/png",
+			"sizes" : "72x72"
+		}
+
+	]
+}
